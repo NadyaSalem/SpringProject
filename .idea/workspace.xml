@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2X59cL0HwSSvfWUeaPJjtoQoJGU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Homework-NadyaSalem-Regular Exam/src/main/resources/static/assets/images",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "34b0abe94f7879cf032e18d481d3306c"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.onlinetherapy" />
+      <recent name="com.dictionaryapp.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\templates" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\resources" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images\logo.jpg" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OnlineTherapyApplication">
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Homework-NadyaSalem-Regular Exam/DictionaryApp/templates/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="OnlineTherapyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
+      <module name="OnlineTherapy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlinetherapy.OnlineTherapyApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onlinetherapy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.login.html" />
+      <item itemvalue="Spring Boot.OnlineTherapyApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OnlineTherapyApplication" />
+        <item itemvalue="JavaScript Debug.login.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="" />
+      <created>1697908158794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697908158794</updated>
+      <workItem from="1697908160646" duration="30000" />
+      <workItem from="1699976004090" duration="213000" />
+      <workItem from="1699976515274" duration="329000" />
+      <workItem from="1699976957266" duration="49000" />
+      <workItem from="1699978515890" duration="36000" />
+      <workItem from="1700231367473" duration="1184000" />
+      <workItem from="1701336130951" duration="1988000" />
+      <workItem from="1701347093691" duration="173000" />
+      <workItem from="1701347776411" duration="465000" />
+      <workItem from="1701348637421" duration="72000" />
+      <workItem from="1701358474145" duration="1666000" />
+      <workItem from="1701685023437" duration="1741000" />
+      <workItem from="1701779089464" duration="456000" />
+      <workItem from="1702459647616" duration="2798000" />
+      <workItem from="1702463265574" duration="1947000" />
+      <workItem from="1702465937331" duration="17000" />
+      <workItem from="1702472635734" duration="166000" />
+      <workItem from="1702472817293" duration="310000" />
+      <workItem from="1702473337617" duration="865000" />
+      <workItem from="1702477009255" duration="5257000" />
+      <workItem from="1702484275213" duration="58000" />
+      <workItem from="1702486466469" duration="3011000" />
+      <workItem from="1702489503391" duration="276000" />
+      <workItem from="1702489900783" duration="2303000" />
+      <workItem from="1702497264622" duration="4989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
