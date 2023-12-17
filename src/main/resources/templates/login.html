@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/commons::head}"><title>Online Therapy</title></head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Online Therapy</title>
+
+    <link rel="stylesheet" href="/css/reset-css.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
 <body>
 <header th:replace="~{fragments/commons::nav}"></header>
 <main>
     <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Login</span></h1>
     <hr class="hr-3 w-25 bg-white"/>
-    <form class="mx-auto w-25 bg-blur rounded"
+    <form class="mx-auto w-25 bg-blur"
           th:method="POST"
-          th:action="@{/login}"
-          th:object="${loginDTO}">
-
-
-        <!--    Example: Render errors messages with fields.errors - you can make it differently. -->
-        <div th:each="error: ${#fields.errors()}"
-             th:text="${error}"
-             class="text-danger">Error messages
-        </div>
-        <div th:if="${isFound==false}"
-             class="text-danger">Incorrect username or password!
-        </div>
-
-
-        <div th:if="isFound==false" class="text-danger">Error messages</div>
-        <div th:if="isFound==false" class="text-danger">Incorrect username or password!</div>
+          th:action="@{/users/login}">
 
         <div class="form-group">
             <div class="label-holder text-white d-flex justify-content-center">
                 <label for="username" class="h3 mb-2">Username</label>
             </div>
             <input type="text"
-                   th:field="*{username}"
-                   th:errorclass="'is-invalid bg-danger'"
                    class="form-control"
-                   id="username"/>
+                   id="username"
+                   name="username"
+                   placeholder="username"
+                   th:value="${username}"/>
         </div>
 
         <div class="form-group">
@@ -42,14 +36,17 @@
                 <label for="password" class="h3 mb-2">Password</label>
             </div>
             <input type="password"
-                   th:field="*{password}"
-                   th:errorclass="'is-invalid bg-danger'"
                    class="form-control"
-                   id="password"/>
+                   id="password"
+                   name="password"
+                   placeholder="password"/>
         </div>
-
+        <hr>
+        <p th:if="${bad_credentials}" class="errors alert alert-danger">
+            Incorrect username or password.
+        </p>
         <div class="button-holder d-flex justify-content-center">
-            <button type="submit" class="btn btn-warning  mb-3">Login</button>
+            <input type="submit" class="btn btn-warning  mb-3" value="Login"/>
         </div>
 
     </form>

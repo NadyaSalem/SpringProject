@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/commons::head}"></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Online Therapy</title>
+
+<link rel="stylesheet" href="/css/reset-css.css"/>
+        <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+</head>
 <body>
 <header th:replace="~{fragments/commons::nav}"></header>
 <main>
@@ -10,8 +18,8 @@
 
     <form class="mx-auto w-25 bg-blur rounded"
           th:method="POST"
-          th:action="@{/register}"
-          th:object="${registrationDTO}">
+          th:action="@{/users/register}"
+          th:object="${userRegistrationDTO}">
 
         <div class="form-group">
             <div class="label-holder textCol d-flex justify-content-center">

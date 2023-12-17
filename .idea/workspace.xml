@@ -4,11 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="" />
+    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/AppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/TherapistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/controller/WordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/AppointmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/init/LanguageSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/init/TherapistSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/CreateWordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/CreateAppointmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserLoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserRegistrationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserRegistrationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/WordsHomeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/AppointmentsHomeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Therapist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/enums/LanguageName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/enums/TherapistType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repo/LanguageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repo/WordRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/WordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/sessions/LoggedUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/util/CurrentUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/myLogo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/commons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/commons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/word-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/appointment-add.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,25 +86,38 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Homework-NadyaSalem-Regular Exam/src/main/resources/static/assets/images",
+    "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Spring Project/src/main/resources/templates",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "34b0abe94f7879cf032e18d481d3306c"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.onlinetherapy" />
-      <recent name="com.dictionaryapp.service" />
+      <recent name="com.onlinetherapy.model.dtos" />
+      <recent name="com.onlinetherapy.service.impl" />
+      <recent name="com.onlinetherapy.model.enums" />
+      <recent name="com.onlinetherapy.repo" />
+      <recent name="com.onlinetherapy.model.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\resources\templates" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com\onlinetherapy" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com\onlinetherapy\web" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\resources\static\images" />
       <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images" />
-      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\templates" />
-      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com\onlinetherapy\service\impl" />
       <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\resources" />
       <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images" />
       <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images\logo.jpg" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.onlinetherapy.web" />
+      <recent name="com.onlinetherapy.model" />
+      <recent name="com.onlinetherapy.interceptor" />
+      <recent name="com.onlinetherapy.init" />
+      <recent name="com.onlinetherapy.service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -128,7 +188,13 @@
       <workItem from="1702486466469" duration="3011000" />
       <workItem from="1702489503391" duration="276000" />
       <workItem from="1702489900783" duration="2303000" />
-      <workItem from="1702497264622" duration="4989000" />
+      <workItem from="1702497264622" duration="5204000" />
+      <workItem from="1702503805143" duration="4670000" />
+      <workItem from="1702624012947" duration="14850000" />
+      <workItem from="1702638908422" duration="4622000" />
+      <workItem from="1702665668153" duration="12062000" />
+      <workItem from="1702720161515" duration="22432000" />
+      <workItem from="1702805006726" duration="34583000" />
     </task>
     <servers />
   </component>
@@ -145,5 +211,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.web.access.intercept.AuthorizationFilter" memberName="authorizationManager" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

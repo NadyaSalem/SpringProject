@@ -18,8 +18,6 @@ public class UserRegistrationDTO {
     @NotNull
     private String password;
 
-    @Size(min = 3, max = 20)
-    @NotNull
     private String confirmPassword;
 
     public UserRegistrationDTO() {
