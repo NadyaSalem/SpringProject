@@ -4,50 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/AppointmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/TherapistRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AppointmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/controller/WordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/AppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/init/LanguageSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/init/TherapistSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/CreateWordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/CreateAppointmentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserLoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserRegistrationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserRegistrationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/WordsHomeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/AppointmentsHomeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Therapist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/enums/LanguageName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/enums/TherapistType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repo/LanguageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repo/WordRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/WordService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/sessions/LoggedUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/util/CurrentUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/myLogo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/about_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/commons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/commons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/word-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/appointment-add.html" afterDir="false" />
+    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="Spring security">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/UserRegistrationController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,8 +152,16 @@
       <workItem from="1702638908422" duration="4622000" />
       <workItem from="1702665668153" duration="12062000" />
       <workItem from="1702720161515" duration="22432000" />
-      <workItem from="1702805006726" duration="34583000" />
+      <workItem from="1702805006726" duration="34978000" />
     </task>
+    <task id="LOCAL-00001" summary="Spring security">
+      <created>1702854651242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702854651242</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +177,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Spring security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring security" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
