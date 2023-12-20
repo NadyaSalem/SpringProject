@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>8.0.30</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="airlines_db"/>
+    <schema id="3" parent="1" name="battleships"/>
+    <schema id="4" parent="1" name="bookshop_system"/>
+    <schema id="5" parent="1" name="code_first"/>
+    <schema id="6" parent="1" name="dictionary"/>
+    <schema id="7" parent="1" name="dog_park"/>
+    <schema id="8" parent="1" name="e_therapy"/>
+    <schema id="9" parent="1" name="exam"/>
+    <schema id="10" parent="1" name="information_schema"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="pathfinder"/>
+    <schema id="13" parent="1" name="pathfinder-project"/>
+    <schema id="14" parent="1" name="performance_schema"/>
+    <schema id="15" parent="1" name="planner_app"/>
+    <schema id="16" parent="1" name="prime_db"/>
+    <schema id="17" parent="1" name="product-shop"/>
+    <schema id="18" parent="1" name="reseller"/>
+    <schema id="19" parent="1" name="restaurant_db"/>
+    <schema id="20" parent="1" name="soft_uni"/>
+    <schema id="21" parent="1" name="softuni_imdb"/>
+    <schema id="22" parent="1" name="spring_data_intro"/>
+    <schema id="23" parent="1" name="sys"/>
+  </database-model>
+</dataSource>
