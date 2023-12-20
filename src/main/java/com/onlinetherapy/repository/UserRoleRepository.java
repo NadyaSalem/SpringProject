@@ -1,14 +1,14 @@
 package com.onlinetherapy.repository;
 
-import com.onlinetherapy.model.entity.UserRoleEntity;
-import com.onlinetherapy.model.enums.UserRoleEnum;
+import com.onlinetherapy.models.entity.Role;
+import com.onlinetherapy.models.enums.UserRoleEnum;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import java.util.List;
 
 @Repository
-public interface UserRoleRepository extends JpaRepository<UserRoleEntity, Long> {
-    Optional<UserRoleEntity> findUserRoleEntityByRole(UserRoleEnum role);
+public interface UserRoleRepository extends JpaRepository<Role, Long> {
+    List<Role> findByUserRole(UserRoleEnum client);
 
 }

@@ -5,7 +5,414 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="Spring security">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/UserRegistrationController.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/SheduleJobs/ClearOldRequestSchedule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/I18NConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/init/DBInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/bindingModels/appointments/CreateAppointmentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/bindingModels/messages/MessageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/bindingModels/requests/MakeRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/bindingModels/requests/RequestToDeleteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/bindingModels/user/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/bindingModels/user/UserRegistrationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/appointments/AppointmentImgView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/appointments/AppointmentToAdminPanelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/appointments/AppointmentViewInCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/appointments/AppointmentWithInfoView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/appointments/AppointmentsViewOnHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/messages/MessagesView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/requests/CloseRequestToAdminPanelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/requests/CompleteRequestsIdView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/requests/OpenRequestToAdminPanelView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/requests/RequestDetailView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/requests/UserRequestsView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/dto/viewModels/users/AllUsersView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/ChoseAppointments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/PurchasedAppointments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/Therapist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/enums/RequestStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/enums/TherapistTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/models/enums/UserRoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/ChoseAppointmentsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/PurchaseAppointmentsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/RequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AppUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/ChoseAppointmentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/ImageCloudService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/InitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/PurchasedAppointmentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/RequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/util/UserNamePasswordLoginProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/validations/matchingPasswords/PasswordMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/validations/matchingPasswords/PasswordMather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/AppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/RequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/rest/MessageRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages_bg.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/FB_IMG_1479416813180.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/autumn.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/carousel-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/carousel-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/carousel-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/carousel-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/carousel-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/carousel-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/header.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/love.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/me1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/product1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/spring.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/summer.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/winter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/counterup/counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/easing/easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/easing/easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/isotope/isotope.pkgd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/isotope/isotope.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/css/lightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/images/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/images/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/lightbox/links.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/waypoints/links.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/lib/waypoints/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mail/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mail/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mail/jqBootstrapValidation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_code.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_custom-forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_jumbotron.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_toasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_background-variant.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_border-radius.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_box-shadow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_breakpoints.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_caret.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_deprecate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_gradients.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_grid-framework.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_hover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_image.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_nav-divider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_reset-text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_resize.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_size.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_table-row.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_text-emphasis.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_text-hide.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_text-truncate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_transition.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/mixins/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_align.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_borders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_clearfix.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_embed.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_flex.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_float.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_interactions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_overflow.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_position.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_screenreaders.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_sizing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_spacing.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_stretched-link.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_text.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/utilities/_visibility.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/bootstrap/scss/vendor/_rfs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/appointment-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/appointment-info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/appointment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/headForAdminPanel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/topbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/request-details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/requests.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/MyOnlineTherapyApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/AppUserDetailsServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/AuthServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/ChoseAppointmentsServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/MessageServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/web/controllers/AuthControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/web/controllers/RequestControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/web/controllers/UserControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/web/rest/MessageRestControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/OnlineTherapyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/InterceptorConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/exeption/ObjectNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/init/TherapistSeeder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/interceptor/LoggingInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/AppUserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/AppointmentsHomeDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/CreateAppointmentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/ListUserRoleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserLoginDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserRegistrationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserRoleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/dtos/UserWithRoleDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Appointment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/Therapist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/entity/UserRoleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/enums/TherapistType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/model/enums/UserRoleEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/TherapistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/TherapistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/UserRoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/repository/UserRoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/UserRoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/impl/ApplicationUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/impl/AppointmentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/impl/InitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/impl/UserRoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/AppointmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/RoleController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlinetherapy/web/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/4645f421d84c78cf77453e0e0f0cc8d4e835002a/_variable.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/4645f421d84c78cf77453e0e0f0cc8d4e835002a/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/547dd70afbb823abc27ff9cde551e9769cd0d6a1/_variable.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/547dd70afbb823abc27ff9cde551e9769cd0d6a1/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/8136bdfee5732e373c1b40684fcddf2553a3d4f0/_variable.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/8136bdfee5732e373c1b40684fcddf2553a3d4f0/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/bba4c5a66a7894a69c91d4bbaeb2427a107f1434/_variable.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/.sass-cache/bba4c5a66a7894a69c91d4bbaeb2427a107f1434/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/config-scss.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/fontawsom-all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/PT_Sans-Web-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/PT_Sans-Web-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/blog/post_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/doctt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/fav.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/gallery/gallery_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/services/service-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/services/service-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/services/service-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/session/therapy-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/session/therapy-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/session/therapy-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/session/therapy-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/session/therapy-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/slider/slider-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/slider/slider-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/images/slider/slider-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/popper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/slider/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/slider/css/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/slider/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/owlcarousel/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/slider/js/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/testimonial/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/testimonial/css/owl.theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/plugins/testimonial/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/.sass-cache/87f88134b2e274406d696eddf2817a21a5f37943/_variable.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/.sass-cache/87f88134b2e274406d696eddf2817a21a5f37943/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/_variable.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/Simple-Line-Iconsb26c.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/themify.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/themify.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/themify.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/webfonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/reset-css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/about_us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/appointment-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/appointment-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/contact_us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/commons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/roles-changed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/roles-edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/roles-show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/services.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +426,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,6 +439,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2X59cL0HwSSvfWUeaPJjtoQoJGU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,30 +454,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Spring Project/src/main/resources/templates",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "34b0abe94f7879cf032e18d481d3306c"
+    "last_directory_selection": "C:/Users/User/OneDrive/Desktop/Spring Project/src/main/java/com/onlinetherapy",
+    "last_opened_file_path": "C:/Users/User/OneDrive/Desktop/Spring Project/src/test",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "spring.configuration.checksum": "ec4aa09cb1c668b9327569d138789bf3"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.onlinetherapy" />
       <recent name="com.onlinetherapy.model.dtos" />
       <recent name="com.onlinetherapy.service.impl" />
       <recent name="com.onlinetherapy.model.enums" />
       <recent name="com.onlinetherapy.repo" />
-      <recent name="com.onlinetherapy.model.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\resources\templates" />
-      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com\onlinetherapy" />
-      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com\onlinetherapy\web" />
-      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\resources\static\images" />
-      <recent name="C:\Users\User\OneDrive\Desktop\Homework-NadyaSalem-Regular Exam\src\main\resources\static\assets\images" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\test" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\target" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src" />
+      <recent name="C:\Users\User\OneDrive\Desktop\Spring Project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\OneDrive\Desktop\Spring Project\src\main\java\com\onlinetherapy\service\impl" />
@@ -89,8 +514,34 @@
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Homework-NadyaSalem-Regular Exam/DictionaryApp/templates/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="OnlineTherapyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Spring Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Spring Project" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlineTherapy" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
+      <module name="OnlineTherapy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlinetherapy.OnlineTherapy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.onlinetherapy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OnlineTherapyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="OnlineTherapy" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.onlinetherapy.OnlineTherapyApplication" />
       <extension name="coverage">
@@ -106,10 +557,12 @@
     <list>
       <item itemvalue="JavaScript Debug.login.html" />
       <item itemvalue="Spring Boot.OnlineTherapyApplication" />
+      <item itemvalue="Spring Boot.OnlineTherapy" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.OnlineTherapyApplication" />
+        <item itemvalue="Spring Boot.OnlineTherapy" />
         <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
@@ -152,7 +605,17 @@
       <workItem from="1702638908422" duration="4622000" />
       <workItem from="1702665668153" duration="12062000" />
       <workItem from="1702720161515" duration="22432000" />
-      <workItem from="1702805006726" duration="34978000" />
+      <workItem from="1702805006726" duration="35192000" />
+      <workItem from="1702889050402" duration="16248000" />
+      <workItem from="1702908272468" duration="112000" />
+      <workItem from="1702909452558" duration="4273000" />
+      <workItem from="1702913818282" duration="255000" />
+      <workItem from="1702914936478" duration="803000" />
+      <workItem from="1702916024094" duration="3154000" />
+      <workItem from="1702920746907" duration="1331000" />
+      <workItem from="1702927337641" duration="8213000" />
+      <workItem from="1702989041690" duration="3765000" />
+      <workItem from="1703049112659" duration="5234000" />
     </task>
     <task id="LOCAL-00001" summary="Spring security">
       <created>1702854651242</created>
@@ -161,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702854651242</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Spring security">
+      <created>1702854823609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702854823609</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

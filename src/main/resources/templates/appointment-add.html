@@ -1,60 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Online Therapy</title>
-
-    <link rel="stylesheet" href="/css/reset-css.css"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Hope eTherapy - сайт за психологично консултиране</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
 </head>
-<body>
-<header th:replace="~{fragments/commons::nav}"></header>
-<main>
-    <h1 class="text-center mt-2"><span class="badge badge-pill badge-dark">Book an Appointment</span></h1>
-    <hr class="hr-3 w-25 bg-white"/>
 
-    <form class="mx-auto w-25 bg-blur rounded"
-          th:action="@{/appointments/add}"
-          th:method="POST"
-          th:object="${createAppointmentDTO}">
+<body class="bg-secondary">
+<!-- Topbar Start -->
+<div th:insert="~{fragments/topbar}"></div>
+<!-- Topbar End -->
 
-        <div class="form-group">
-            <div class="label-holder text-white textCol d-flex justify-content-center">
-                <label for="inputDate" class="h4 mb-2">Set input date</label>
+<!-- Navbar Start -->
+<div th:insert="~{fragments/navbar}"></div>
+
+<main role="main" class="bg-secondary">
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img class="w-100" alt="Image" th:src="@{/images/carousel-12.jpg}">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <div class="p-3" style="max-width: 1100px;">
+
+                    <div class="container text-light">
+                        <h1 class="display-3 ">
+                            <strong class="text-white bg-blur border-white pl-3 border-bottom">
+                               Добави Услуга</strong></h1>
+                    </div>
+
+                    <div class="container bg-blur rounded p-10 mt-10 w-0">
+                        <form th:action="@{/appointments/add}"
+                              th:method="post"
+                              th:object="${createAppointmentDTO}"
+                              class=" text-center text-light" enctype="multipart/form-data">
+
+                            <div class="form-group row">
+                                <label for="name" class="col-sm-10 col-form-label">Вид терапия</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control"
+                                           id="name"
+                                           name="name"
+                                           th:value="${name}"
+                                           th:field="*{name}"
+                                           th:errorclass="is-invalid"
+                                           aria-describedby="nameHelpInline" placeholder="name">
+                                    <small id="nameHelpInline"
+                                           class="invalid-feedback bg-danger text-light rounded">
+                                        Дължината трябва да е минимум 5 символа.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="description" class="col-sm-10 col-form-label">Описание на консултацията</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control"
+                                           id="description"
+                                           name="description"
+                                           th:field="*{description}"
+                                           th:errorclass="is-invalid"
+                                           aria-describedby="descriptionHelpInline" placeholder="Description">
+                                    <small id="descriptionNameHelpInline"
+                                           class="invalid-feedback bg-danger text-light rounded">
+                                        Дължината трябва да е повече от 20 символа.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="price" class="col-sm-10 col-form-label">Цена</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control"
+                                           id="price"
+                                           name="price"
+                                           th:field="*{price}"
+                                           th:errorclass="is-invalid"
+                                           aria-describedby="priceHelpInline" placeholder="Price">
+                                    <small id="priceHelpInline"
+                                           class="invalid-feedback bg-danger text-light rounded">
+                                        Въведете цена на продукта.
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="img" class="col-sm-10 col-form-label">Снимка</label>
+                                <div class="col-sm-10">
+                                    <input type="file" class="form-control"
+                                           required
+                                           id="img"
+                                           name="img"
+                                           th:errorclass="is-invalid"
+                                           aria-describedby="imgHelpInline" placeholder="cloudinary URL">
+                                    <small id="imgHelpInline"
+                                           class="invalid-feedback bg-danger text-light rounded">
+                                        Въведете снимка.
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="therapist" class="col-sm-10 col-form-label">Терапевт</label>
+                                <div class="col-sm-10">
+                                    <select id="therapist" class="custom-select"
+                                           name="therapist"
+                                           th:field="*{therapist}"
+                                           th:errorclass="is-invalid"
+                                           aria-describedby="categoryHelpInline">
+
+                                        <option value="-1" selected>Therapist</option>
+                                        <option value="1">INDIVIDUAL_COUNSELOR</option>
+                                        <option value="2">FAMILY_COUNSELOR</option>
+                                        <option value="3">ORGANIZATIONAL_COUNSELOR</option>
+                                    </select>
+
+                                    <small id="categoryHelpInline"
+                                           class="invalid-feedback bg-danger text-light rounded">
+                                        Трябва да изберете терапевт.
+                                    </small>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-info w-100">Добавяне</button>
+                        </form>
+                        <hr class="bg-light">
+                    </div>
+                </div>
             </div>
-            <input type="date" class="form-control" id="inputDate" name="inputDate"
-                   th:field="*{inputDate}"
-                   th:errorclass="'is-invalid alert-danger'"/>
-            <small class="invalid-feedback text-danger">
-                The input date must be a date in the future!</small>
         </div>
-
-        <div class="form-group">
-            <div class="text-white label-holder d-flex justify-content-center">
-                <label for="therapist" class="h4 mb-2">Therapist</label>
-            </div>
-            <select class="browser-default custom-select" id="therapist" name="therapist"
-                    th:field="*{therapist}"
-                    th:errorclass="'is-invalid alert-danger'">
-                <option value="''">Select therapist</option>
-                <option value="INDIVIDUAL_COUNSELOR">Individual Counselor</option>
-                <option value="FAMILY_COUNSELOR">Family Counselor</option>
-                <option value="ORGANIZATIONAL_COUNSELOR">Organizational Counselor</option>
-            </select>
-
-            <small class="invalid-feedback text-danger">
-                You must select a therapist!</small>
-        </div>
-
-        <div class="button-holder d-flex justify-content-center">
-            <button type="submit" class="btn btn-warning  mb-3" value="Register">Book an Appointment</button>
-        </div>
-
-    </form>
+    </div>
 </main>
-<footer th:replace="~{fragments/commons::footer}"></footer>
+<footer>
+    <div th:insert="~{fragments/footer}"></div>
+</footer>
 </body>
 </html>

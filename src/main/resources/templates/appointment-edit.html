@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hope eTherapy - сайт за психологично консултиране</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
+</head>
+<body>
+
+<main role="main" class="bg-secondary">
+    <div id="container-wrapper">
+        <div class="form-group row" th:object="${editAppointmentDTO}">
+        </div>
+        <div class="form-group row">
+            <a th:href="@{/user/admin}" class="btn btn-primary"><i class="material-icons"></i>
+                <span>Обратно към Админ Панел</span></a>
+        </div>
+        <div id="root-details">
+
+            <h3 class="text-left text-black" th:text="*{appointmentToEdit.name}"></h3>
+
+            <section class="m-3">
+                <div class="d-flex bg-light">
+                    <section id="movie-name-and-photo-left" class="p-1">
+                        <div class="text-center p-lg-4">
+                            <img id="image-actor" width="200" height="200" th:src="*{appointmentToEdit.img}">
+                        </div>
+                    </section>
+                    <section id="movie-description-right" class="p-1">
+                        <section>
+                            <div class="bg-light p-4 col-lg-6">
+                                <h6 class="text-dark" th:text="*{appointmentToEdit.description}"></h6>
+                                <a class="btn btn-primary" th:text="|Цена: *{appointmentToEdit.price} лв.|"></a>
+                            </div>
+                        </section>
+                        <section>
+                            <form th:action="@{/appointment/edit/{id} (id = *{id})}"
+                                  th:method="patch"
+                                  th:object="${appointmentToEdit}"
+                                  class=" text-center text-light">
+                                <div class="row">
+                                    <div class="col-sm-10 col-form-label text-dark"><h4>Направете промени</h4></div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="description" class="col-sm-10 col-form-label text-dark">Ново Описание на
+                                        консултацията</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control"
+                                               id="description"
+                                               name="description"
+                                               th:field="*{description}"
+                                               th:errorclass="is-invalid"
+                                               aria-describedby="descriptionHelpInline" placeholder="Description">
+                                        <small id="descriptionNameHelpInline"
+                                               class="invalid-feedback bg-danger text-light rounded">
+                                            Дължината трябва да е повече от 20 символа.
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="price" class="col-sm-10 col-form-label text-dark">Нова Цена</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control"
+                                               id="price"
+                                               name="price"
+                                               th:field="*{price}"
+                                               th:errorclass="is-invalid"
+                                               aria-describedby="priceHelpInline" placeholder="Price">
+                                        <small id="priceHelpInline"
+                                               class="invalid-feedback bg-danger text-light rounded">
+                                            Въведете цена на терапията.
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="img" class="col-sm-10 col-form-label text-dark">Нова Снимка</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control"
+                                               id="img"
+                                               name="img"
+                                               th:field="*{img}"
+                                               aria-describedby="imgHelpInline" placeholder="cloudinary URL">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button type="submit" class="btn btn-info col-sm-10 col-form-label">Промени</button>
+                                </div>
+                            </form>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+</body>
+</html>

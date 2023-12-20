@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Hope eTherapy - сайт за психологично консултиране</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
+</head>
+
+<body>
+<div th:insert="~{fragments/topbar}"></div>
+<!-- Navbar Start -->
+<div th:include="~{fragments/navbar}"></div>
+<!-- Navbar End -->
+
+<!-- Header Start -->
+<div th:action="@{/about}" class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+    <div class="container text-center py-5">
+        <h1 class="text-white display-3 mt-lg-5">Здравейте!</h1>
+        <div class="d-inline-flex align-items-center text-white">
+            <p class="m-0"><a class="text-white" th:href="@{/}">Начало</a></p>
+            <i class="fa fa-circle px-3"></i>
+            <p class="m-0"><a class="text-white" th:href="@{/appointment}">Психологични консултации</a></p>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <h1 class="section-title position-relative text-center mb-5">
+                                      Онлайн Терапия
+                    </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 py-5">
+                <h4 class="font-weight-bold mb-3">Какво представлява онлайн консултацията с психолог?</h4>
+                <p>Онлайн консултацията е разновидност на класическия вариант на психологичната консултация – срещата на живо.
+                    Контактът между психолога и клиента се осъществява чрез видео разговор- среща в реално време,
+                    чрез установяване на гласова и видео връзка. За една качествена и ползотворна онлайн консултацията с
+                    психолог е необходимо да имате камера на компютъра, микрофон и добра интернет връзка.
+
+                    Наблягаме на ВИДЕО връзка, тъй като по време на комуникация ние получаваме едва около
+                    7% от информацията от казаните думи, 13% от тона на гласа на говорещия и 80% от телесния
+                    език или невербалната комуникация. Затова за добрия психолог зрителният контакт е изключително важен и полезен
+                    в намирането на решение на казуса с който е дошъл клиента.
+
+                    Предпочитани от клиенти платформи:
+
+                </p>
+                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Google Meet</h5>
+                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Viber</h5>
+                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Zoom</h5>
+                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Skype</h5>
+                <p>Цените се определят в зависимост от вида на терапията.
+                    Единственото нещо, което трябва да направите, е да се свържете с мен.</p>
+                <a th:href="@{/appointment}" class="btn btn-primary mt-2">Психологични консултации</a>
+            </div>
+            <div class="col-lg-4" style="min-height: 400px;">
+                <div class="position-relative h-100 rounded overflow-hidden">
+                    <img class="position-absolute w-100 h-100" src="images/about.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-4 py-5">
+                <h4 class="font-weight-bold mb-3">Запазване на час</h4>
+                <p>Записването, както за онлайн консултация, така и за среща на живо, става предварително със записване на телефон 0885888888,
+                   или чрез съобщение, което се изпраща, след като направите покупка на консутация.
+<!--                   Най-често срещите се провеждат:-->
+                </p>
+<!--                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> 1 път седмично</h5>-->
+<!--                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> 2 пъти седмично-->
+<!--                </h5>-->
+<!--                <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Еднократна консултация-->
+<!--                </h5>-->
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <h1 class="section-title position-relative text-center mb-5">
+                    За Мен</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 py-5">
+                <h4 class="font-weight-bold mb-3">Моята специалност</h4>
+                <h5 class="text-muted mb-3">КОГНИТИВНО-ПОВЕДЕНЧЕСКА ТЕРАПИЯ
+                    (2013-2016г.) Когнитивно – поведенченски консултант под супервизия към Българска Асоциация по Когнитивно-Поведенческата
+                    Психотерапия, с Доц. Павлина Петкова, дм: Учредител и Председател на Акредитационната комисия на БАКПП.
+                    да предизвиквам себе си с нови неща.</h5>
+                <p> </p>
+            </div>
+
+            <div class="col-lg-4" style="min-height: 400px;">
+                <div class="position-relative h-100 rounded overflow-hidden">
+                    <img class="position-absolute w-100 h-100" src="images/me1.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+
+            <div class="col-lg-4 py-5">
+                <h4 class="font-weight-bold mb-3">За Мен</h4>
+                <h5 class="text-muted mb-3">Предлагам индивидуална психотерапия за проблеми и преживявания свързани с:
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Паник Атаки</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Психосоматика</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Депресия</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Тревожност</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Ниска самооценка</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Емоционална нестабилност</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Загуба</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Социални проблеми</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i> Личностно развитие</h5>
+                    </h5>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer Start -->
+<div th:insert="~{fragments/footer}"></div>
+<!-- Footer End -->
+
+</body>
+
+</html>

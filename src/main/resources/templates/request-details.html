@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hope eTherapy - сайт за психологично консултиране</title>
+    <th:block th:replace="~{fragments/head}"></th:block>
+</head>
+
+<body class="request-details">
+<div th:include="~{fragments/topbar}"></div>
+<div th:include="~{fragments/navbar}"></div>
+
+<main>
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="card p-4 mt-3"
+             th:action="@{/appointments/request/{id}}"
+             th:object="${requestDetails}">
+            <div class="first d-flex justify-content-between align-items-center mb-3">
+                <div class="info">
+                    <span class="d-block name" th:text="|Благодаря ти, *{clientFirstName}|"></span>
+                    <span class="request" th:text="|Вашата консултация е с номер - *{id}|"></span>
+                </div>
+                <img src="https://i.imgur.com/NiAVkEw.png" width="40"/>
+            </div>
+            <div class="detail">
+                <span class="d-block summery">Ще се свържем с Вас за уточняване на детайли.</span>
+                <span class="d-block summery">Адрес за доставка:</span>
+            </div>
+            <hr>
+            <div class="text">
+                <span class="d-block new mb-1" th:text="*{clientFullName}"></span>
+            </div>
+            <span class="d-block address mb-3" th:text="*{clientAddress}"></span>
+
+            <div class="  money d-flex flex-row mt-2 align-items-center">
+                <img src="https://i.imgur.com/ppwgjMU.png" width="20"/>
+                <span class="ml-2" th:text="|Плащане с банков превод : *{requestSum} лв.|"></span>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div th:insert="~{fragments/footer}"></div>
+
+</body>
+</html>

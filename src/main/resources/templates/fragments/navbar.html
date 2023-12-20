@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head></head>
+<body>
+
+<div th:fragments="navbar"
+        class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+            <a href="/" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-primary"><span class="text-secondary"></span>Hope eTherapy</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a th:href="@{/}" th:text="#{navbar_index}" class="nav-item nav-link active">Начало</a>
+                    <a th:href="@{/about}" th:text="#{navbar_info}" class="nav-item nav-link" sec:authorize="hasRole('ROLE_CLIENT')">Информация</a>
+<!--                    <a th:href="@{/appointment}" th:text="#{navbar_appointment}" class="nav-item nav-link">Психологични консултации</a>-->
+                </div>
+                <a th:href="@{/}" class="navbar-brand mx-5 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary"></span>Hope eTherapy</h1>
+                </a>
+                <div class="navbar-nav mr-auto py-0">
+                    <a th:href="@{/user/admin}" class="nav-item nav-link" sec:authorize="hasRole('ROLE_ADMIN')">Админ панел</a>
+                    <a th:href="@{/gallery}" th:text="#{navbar_gallery}" class="nav-item nav-link">Галерия</a>
+                    <a th:href="@{/cart}" th:text="#{navbar_cart}" class="nav-item nav-link" sec:authorize="hasRole('ROLE_CLIENT')">Кошница</a>
+<!--                    <a th:href="@{/requests}" th:text="#{navbar_requests}" class="nav-item nav-link" sec:authorize="hasRole('ROLE_CLIENT')">Поръчки</a>-->
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+</body>
+</html>

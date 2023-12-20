@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head></head>
+<body>
+<div th:fragments="topbar"
+     class="container-fluid bg-primary py-3 d-none d-md-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+
+                    <h5><a class="text-white px-3"
+                           sec:authorize="isAuthenticated()">
+                        Добре дошли,
+                        <th:block sec:authentication="name">X</th:block>
+                        !</a></h5>
+
+                    <a class="text-white pr-3"
+                       th:text="#{navbar_register}"
+                       th:href="@{/register}"
+                       sec:authorize="!isAuthenticated()">
+                        Регистрация</a>
+                    <span class="text-white"></span>
+                    <a class="text-white px-3"
+                       th:text="#{navbar_login}"
+                       th:href="@{/login}"
+                       sec:authorize="!isAuthenticated()">
+                        Вход</a>
+                    <span class="text-white"></span>
+                    <a class="text-white pl-3" th:href="@{/appointments/add}" sec:authorize="hasRole('ROLE_ADMIN')">
+                       Добавете нова услуга</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <form class="text-white"
+                            th:method="POST"
+                            th:action="@{/logout}"
+                            sec:authorize="isAuthenticated()">
+                        <h5><input class="btn btn-link nav-link text-white px-3" type="submit" value="Изход" ></input>
+                        </h5>
+                    </form>
+                    <span class="nav-item">
+                        <form th:method="get">
+                            <label class="text-white" th:text="#{navbar_language}" for="lang"></label>
+                            <select
+                                    onchange="this.form.submit()"
+                                    id="lang"
+                                    name="lang">
+                                <option value="en_US" th:selected="${#locale.toString()} == 'en_US'">English</option>
+                                <option value="bg_BG" th:selected="${#locale.toString()} == 'bg_BG'">Български</option>
+                            </select>
+                        </form>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

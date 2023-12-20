@@ -1,12 +1,12 @@
 package com.onlinetherapy.repository;
 
-import com.onlinetherapy.model.entity.Therapist;
-import com.onlinetherapy.model.enums.TherapistType;
+import com.onlinetherapy.models.entity.Therapist;
+import com.onlinetherapy.models.enums.TherapistTypeEnum;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TherapistRepository extends JpaRepository<Therapist, Long> {
 
-    Therapist findByTherapistType(TherapistType therapistType);
+    Therapist findByName(TherapistTypeEnum name);
 }

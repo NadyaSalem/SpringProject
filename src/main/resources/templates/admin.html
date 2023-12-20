@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hope eTherapy - сайт за психологично консултиране</title>
+    <th:block th:replace="~{fragments/headForAdminPanel}"></th:block>
+</head>
+<body>
+
+<a th:href="@{/}" class="btn btn-primary"><i class="material-icons"></i> <span>Начална страница</span></a>
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8" onclick="showHideRow('hidden_row1');"><h2><i class="material-icons">&#xe409;</i> <b>Потребители</b></h2></div>
+                </div>
+            </div>
+            <table id="hidden_row1"  class="hidden_row table table-striped table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Роля</th>
+                    <th>Действие</th>
+                </tr>
+                </thead>
+                <tbody th:each="user : ${allUsers}"
+                       th:object="${user}">
+                <tr>
+                    <td th:text="*{id}"></td>
+                    <td th:text="*{username}"></td>
+                    <td th:text="*{email}"></td>
+                    <td th:each="role : *{roles}"
+                        th:text="${role.userRole}"></td>
+
+                    <td>
+                        <a th:href="@{/user/change-role/{id} (id = *{id})}" class="edit" title="Промени Роля"
+                           data-toggle="tooltip">
+                            <i class="material-icons"><span class="material-icons-outlined">manage_accounts</span></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8" onclick="showHideRow('hidden_row2');"><h2><i class="material-icons">&#xe409;</i> Детайли за всички предлагани <b>Консултации</b></h2></div>
+                </div>
+            </div>
+            <table id="hidden_row2" class="hidden_row table table-striped table-hover table-bordered">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Име</th>
+                    <th>Описание</th>
+                    <th>Цена</th>
+                    <th>Терапевт</th>
+                    <th>Действие</th>
+                </tr>
+                </thead>
+                <tbody th:each="appointment : ${allAppointments}"
+                       th:object="${appointment}">
+                <tr>
+                    <td th:text="*{id}"></td>
+                    <td th:text="*{name}"></td>
+                    <td th:text="*{description}"></td>
+                    <td th:text="*{price}"></td>
+                    <td th:text="*{therapist.name}"></td>
+
+                    <td>
+                        <a th:href="@{/appointment/edit/{id}(id = *{id})}" class="edit" title="Edit" data-toggle="tooltip">
+                            <i class="material-icons">&#xE254;</i></a>
+                        <a th:href="@{/appointment/delete/{id}(id = *{id})}" class="delete" title="Delete"
+                           data-toggle="tooltip">
+                            <i class="material-icons">&#xE872;</i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-8" onclick="showHideRow('hidden_row3');"><h2><i class="material-icons">&#xe409;</i> Детайли за всички <b>Записани часове</b></h2></div>
+            </div>
+        </div>
+        <table id="hidden_row3" class="hidden_row table table-striped table-hover">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>Клиент</th>
+                <th>Дата на поръчка</th>
+                <th>Статус</th>
+                <th>Обща Сума</th>
+                <th>Действие</th>
+            </tr>
+            </thead>
+            <tbody class="border-primary" th:each="openRequest : ${allOpenRequests}"
+                   th:object="${openRequest}">
+            <tr style="background-color: beige">
+                <th th:text="*{id}"></th>
+                <td th:text="|*{client.firstName} *{client.lastName}|"></td>
+                <td th:text="*{getDateRequested}"></td>
+                <td th:text="*{requestStatus}"></td>
+                <td th:text="|*{requestSum} лв.|"></td>
+                <td><a th:href="@{/request/close/{id}(id = *{id})}" class="view" title="Close Order"
+                       data-toggle="tooltip"><i class="material-icons">&#xE5C8;</i></a>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <th colspan="2">Вид консултация</th>
+                <th>Брой часове</th>
+                <th>Единична Цена</th>
+                <th>Сума</th>
+            </tr>
+            <tr th:each="appointment : *{requestedAppointments}">
+                <td></td>
+                <td colspan="2" th:text="${appointment.name}"></td>
+                <td th:text="${appointment.count}"></td>
+                <td th:text="${appointment.price}"></td>
+                <td th:text="${appointment.getAppointmentSum}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-8" onclick="showHideRow('hidden_row4');">
+                    <h2><i class="material-icons">&#xe409;</i> Детайли за всички <b>Записани терапии</b></h2>
+                </div>
+            </div>
+        </div>
+        <table id="hidden_row4" class="hidden_row table table-striped table-hover">
+            <thead>
+            <tr>
+                <th>№</th>
+                <th>Клиент</th>
+                <th>Дата на терапията</th>
+                <th colspan="2">Статус</th>
+                <th>Обща Сума</th>
+            </tr>
+            </thead>
+            <tbody class="border-primary" th:each="closeRequest : ${allCloseRequests}"
+                   th:object="${closeRequest}">
+            <tr style="background-color: beige">
+                <th th:text="${closeRequest.id}"></th>
+                <td th:text="|${closeRequest.client.firstName} ${closeRequest.client.lastName}|"></td>
+                <td th:text="${closeRequest.getDateRequested}"></td>
+                <td colspan="2" th:text="${closeRequest.requestStatus}"></td>
+                <td th:text="|${closeRequest.requestSum} лв.|"></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th colspan="2">Име на продукта</th>
+                <th>Количество</th>
+                <th>Единична Цена</th>
+                <th>Сума</th>
+            </tr>
+
+            <tr th:each="appointment : *{requestedAppointments}">
+                <td></td>
+                <td colspan="2" th:text="${appointment.name}"></td>
+                <td th:text="${appointment.count}"></td>
+                <td th:text="${appointment.price}"></td>
+                <td th:text="${appointment.getAppointmentSum}"></td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <th colspan="5">Отзив за тази Терапия</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="5" th:text="${closeRequest.message?.description}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
