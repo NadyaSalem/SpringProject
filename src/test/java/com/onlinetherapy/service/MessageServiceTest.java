@@ -1,14 +1,13 @@
-package onlinetherapy.service;
+package com.onlinetherapy.service;
 
-import com.example.myknitshop.models.dto.viewModels.messages.MessagesView;
-import com.example.myknitshop.models.entity.Message;
-import com.example.myknitshop.models.entity.User;
-import com.example.myknitshop.repository.MessageRepository;
+import com.onlinetherapy.models.dto.viewModels.messages.MessagesView;
+import com.onlinetherapy.models.entity.Message;
+import com.onlinetherapy.models.entity.User;
+import com.onlinetherapy.repository.MessageRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
@@ -16,7 +15,6 @@ import org.modelmapper.ModelMapper;
 import java.util.List;
 
 import static org.mockito.Mockito.lenient;
-import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class MessageServiceTest {
@@ -48,7 +46,7 @@ public class MessageServiceTest {
         lenient().when(messageRepository.findAll()).thenReturn(List.of(message));
 
         MessagesView testMessages = toTest.getAllMessagesViewOnHomePage().get(0);
-        Assertions.assertEquals(testMessages.getAuthorFullName(), "Petar Petrov");
+        Assertions.assertEquals(((MessagesView) testMessages).getAuthorFullName(), "Petar Petrov");
         Assertions.assertEquals(testMessages.getDescription(), message.getDescription());
     }
 }

@@ -1,12 +1,10 @@
-package onlinetherapy.web.rest;
+package com.onlinetherapy.web.rest;
 
-import com.example.myknitshop.models.dto.viewModels.messages.MessagesView;
-import com.example.myknitshop.models.entity.Message;
-import com.example.myknitshop.models.entity.User;
-import com.example.myknitshop.repository.MessageRepository;
-import com.example.myknitshop.repository.UserRepository;
-import com.example.myknitshop.service.MessageService;
-import org.junit.jupiter.api.BeforeEach;
+import com.onlinetherapy.models.dto.viewModels.messages.MessagesView;
+import com.onlinetherapy.models.entity.User;
+import com.onlinetherapy.repository.MessageRepository;
+import com.onlinetherapy.repository.UserRepository;
+import com.onlinetherapy.service.MessageService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -16,12 +14,12 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 
+import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.mockito.Mockito.when;
-import static org.hamcrest.Matchers.hasSize;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 @AutoConfigureMockMvc

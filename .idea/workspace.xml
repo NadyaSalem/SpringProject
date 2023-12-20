@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="Ready" />
+    <list default="true" id="277c97ef-9598-406f-8096-09ec05ebda7e" name="Changes" comment="Ready">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d7fed36f-cfc7-4152-b735-3e8c9b06f665.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d7fed36f-cfc7-4152-b735-3e8c9b06f665.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/AppUserDetailsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/AppUserDetailsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/AuthServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/AuthServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/ChoseAppointmentsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/ChoseAppointmentsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/MessageServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/service/MessageServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/onlinetherapy/web/rest/MessageRestControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/onlinetherapy/web/rest/MessageRestControllerIT.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -100,9 +110,43 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OnlineTherapyApplication">
-    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Homework-NadyaSalem-Regular Exam/DictionaryApp/templates/login.html" useBuiltInWebServerPort="true">
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.All in OnlineTherapy">
+    <configuration name="All in OnlineTherapy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineTherapy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthControllerIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineTherapy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="onlinetherapy.web.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="onlinetherapy.web.controllers" />
+      <option name="MAIN_CLASS_NAME" value="onlinetherapy.web.controllers.AuthControllerIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="onlinetherapy.service in OnlineTherapy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OnlineTherapy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="onlinetherapy.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="onlinetherapy.service" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Spring Project" />
@@ -145,15 +189,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.login.html" />
+      <item itemvalue="JUnit.All in OnlineTherapy" />
+      <item itemvalue="JUnit.AuthControllerIT" />
+      <item itemvalue="JUnit.onlinetherapy.service in OnlineTherapy" />
       <item itemvalue="Spring Boot.OnlineTherapyApplication" />
       <item itemvalue="Spring Boot.OnlineTherapy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in OnlineTherapy" />
+        <item itemvalue="JUnit.onlinetherapy.service in OnlineTherapy" />
+        <item itemvalue="JUnit.AuthControllerIT" />
         <item itemvalue="Spring Boot.OnlineTherapyApplication" />
         <item itemvalue="Spring Boot.OnlineTherapy" />
-        <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +253,7 @@
       <workItem from="1702920746907" duration="1331000" />
       <workItem from="1702927337641" duration="8213000" />
       <workItem from="1702989041690" duration="3765000" />
-      <workItem from="1703049112659" duration="5586000" />
+      <workItem from="1703049112659" duration="8013000" />
     </task>
     <task id="LOCAL-00001" summary="Spring security">
       <created>1702854651242</created>
@@ -235,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703054720692</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ready">
+      <created>1703054785268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703054785268</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,5 +318,11 @@
         <PinnedItemInfo parentTag="org.springframework.security.web.access.intercept.AuthorizationFilter" memberName="authorizationManager" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring_Project$onlinetherapy_service_in_OnlineTherapy.ic" NAME="onlinetherapy.service in OnlineTherapy Coverage Results" MODIFIED="1703056649486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>onlinetherapy.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Spring_Project$All_in_OnlineTherapy.ic" NAME="All in OnlineTherapy Coverage Results" MODIFIED="1703056876942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

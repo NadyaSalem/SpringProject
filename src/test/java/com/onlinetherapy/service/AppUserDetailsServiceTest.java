@@ -1,9 +1,9 @@
-package onlinetherapy.service;
+package com.onlinetherapy.service;
 
-import com.example.myknitshop.models.entity.Role;
-import com.example.myknitshop.models.entity.User;
-import com.example.myknitshop.models.enums.UserRoleEnum;
-import com.example.myknitshop.repository.UserRepository;
+import com.onlinetherapy.models.entity.Role;
+import com.onlinetherapy.models.entity.User;
+import com.onlinetherapy.models.enums.UserRoleEnum;
+import com.onlinetherapy.repository.UserRepository;
 import junit.framework.AssertionFailedError;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

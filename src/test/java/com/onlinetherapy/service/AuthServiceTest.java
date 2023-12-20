@@ -1,11 +1,11 @@
-package onlinetherapy.service;
+package com.onlinetherapy.service;
 
-import com.example.myknitshop.models.dto.bindingModels.user.UserRegistrationDTO;
-import com.example.myknitshop.models.entity.Role;
-import com.example.myknitshop.models.entity.User;
-import com.example.myknitshop.models.enums.UserRoleEnum;
-import com.example.myknitshop.repository.UserRepository;
-import com.example.myknitshop.repository.UserRoleRepository;
+import com.onlinetherapy.models.dto.bindingModels.user.UserRegistrationDTO;
+import com.onlinetherapy.models.entity.Role;
+import com.onlinetherapy.models.entity.User;
+import com.onlinetherapy.models.enums.UserRoleEnum;
+import com.onlinetherapy.repository.UserRepository;
+import com.onlinetherapy.repository.UserRoleRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,9 +13,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
 import org.mockito.Mock;
-
-import static org.mockito.ArgumentMatchers.any;
-
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
@@ -55,7 +52,7 @@ public class AuthServiceTest {
 
     @BeforeEach
     void setUp() {
-        toTest = new AuthService (mockPasswordEncoder, mockUserRepository,
+        toTest = new AuthService(mockPasswordEncoder, mockUserRepository,
                 mockModelMapper, mockUserRoleRepository);
     }
 

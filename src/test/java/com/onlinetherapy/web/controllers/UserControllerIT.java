@@ -1,4 +1,4 @@
-package onlinetherapy.web.controllers;
+package com.onlinetherapy.web.controllers;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

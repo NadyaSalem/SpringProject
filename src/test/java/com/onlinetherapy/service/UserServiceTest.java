@@ -1,4 +1,4 @@
-package onlinetherapy.service;
+package com.onlinetherapy.service;
 
 import com.onlinetherapy.models.dto.bindingModels.messages.MessageDTO;
 import com.onlinetherapy.models.dto.viewModels.requests.RequestDetailView;
@@ -8,9 +8,6 @@ import com.onlinetherapy.models.enums.UserRoleEnum;
 import com.onlinetherapy.repository.MessageRepository;
 import com.onlinetherapy.repository.RequestRepository;
 import com.onlinetherapy.repository.UserRepository;
-import com.onlinetherapy.service.AppointmentService;
-import com.onlinetherapy.service.RequestService;
-import com.onlinetherapy.service.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

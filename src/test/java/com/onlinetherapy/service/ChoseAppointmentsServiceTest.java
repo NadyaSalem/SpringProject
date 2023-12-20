@@ -1,8 +1,7 @@
-package onlinetherapy.service;
+package com.onlinetherapy.service;
 
-import com.example.onlinetherapy.models.entity.ChoseAppointments;
-import com.example.onlinetherapy.repository.ChoseAppointmentsRepository;
-import com.example.onlinetherapy.service.ChoseAppointmentsService;
+import com.onlinetherapy.models.entity.ChoseAppointments;
+import com.onlinetherapy.repository.ChoseAppointmentsRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

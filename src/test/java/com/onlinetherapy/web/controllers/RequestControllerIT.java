@@ -1,4 +1,4 @@
-package onlinetherapy.web.controllers;
+package com.onlinetherapy.web.controllers;
 
 import com.onlinetherapy.models.dto.bindingModels.requests.MakeRequestDTO;
 import com.onlinetherapy.models.dto.viewModels.appointments.AppointmentViewInCart;
